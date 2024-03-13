@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Gallery</title>
+    <style>
+        body {
+          font-family: sans-serif;
+          color: rgb(1, 0, 0);
+      }
+      header {
+         grid-area: header;
+         color: #5D7586;
+         padding-top: 20px;
+         padding-left: 180px;
+         font-size: 30px;
+      }
+          .container {
+        max-width: 960px;
+        padding-top: 35px;
+        width: 100%;
+        margin: 0 auto;
+       
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 8px;
+    }
+       .box {
+           height: 120px;
+           background-image: url("img/img.png");
+           background-color: rgb(115, 160, 226) ;
+           margin-left: 35px;
+           margin-bottom: 25px;
+           border-radius: 10%;
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: 20px;
+           opacity: 95%;
+    }
+        .text{
+            width: 960px;
+            font-size: 17px;
+            font-family: sans-serif;
+            padding-left: 168px;
+            margin-top: 25px;
+
+        }
+
+        #img-title{
+            display: grid;
+            gap: 40px;
+            align-content: end;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            grid-gap: 8px;
+        }
+
+            
+
+        @media screen and (max-width: 960px) {
+          p{
+                font-size: 17px;
+            }
+
+        }
+    
+       @media screen and (max-width: 668px) {
+          p {
+             font-size: 14px;
+            }
+        }
+ 
+       @media screen and (max-width: 314px) {
+          p {
+           font-size: 10px;
+          }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>Gallery Heading</header>
+    <div class="container" id="img-title">
+        <div class="box" id="box-1">Image Title</div>
+        <div class="box" id="box-2">Image Title</div>
+        <div class="box" id="box-3">Image Title</div>
+        <div class="box" id="box-4">Image Title</div>
+        <div class="box" id="box-5">Image Title</div>
+        <div class="box" id="box-6">Image Title</div>
+        <div class="box" id="box-7">Image Title</div>
+        <div class="box" id="box-8">Image Title</div>
+        <div class="box" id="box-9">Image Title</div>
+        <div class="box" id="box-10">Image Title</div>
+    </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lacinia nisi, nec tristique sem. Cras id tellus ac
+                mauris posuere varius. Pellentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. Praesent
+                commodo euismond odio, eu pharetra nulla dignissim nec. Ut id nulla augue. Duis ultricies euismod purus, ut
+                pretium augue molestie a. Nullam ut malesuada enim. Integer non velit fringilla, porta ex vitae, 
+                porttitor velit. Ut luctus lacinia libero a scelerisque. Ut ullamcorper arcu at mauris ullamcorper tempor.
+</body>
+</html>
